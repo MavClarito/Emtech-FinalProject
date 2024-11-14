@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+{/*import React, { useEffect, useState } from 'react';
 import { View, Text } from 'react-native';
 
 const Monitoring = () => {
@@ -32,3 +32,4 @@ const Monitoring = () => {
 };
 
 export default Monitoring;
+*/}
