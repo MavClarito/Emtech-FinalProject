@@ -5,7 +5,7 @@ import { AuthStackScreen } from '../tabs/auth/login';
 import Home from '../tabs/home';
 import Profile from '../tabs/profile';
 import AboutUs from '../tabs/aboutUs';
-import Monitoring from '../tabs/monitoring';
+import Monitoring from '../tabs/monitoringTab';
 
 const Stack = createStackNavigator();
 
