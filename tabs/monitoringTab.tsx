@@ -1,36 +1,27 @@
 // monitoringTab.js
-import React, { Suspense } from 'react';
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls } from '@react-three/drei';
-import Lake from './Lake'; 
+import React from 'react';
+import { View, Text, StyleSheet } from 'react-native';
 
 export default function MonitoringTab() {
   return (
-    <div style={styles.container}>
-      <Canvas style={styles.canvas} camera={{ position: [0, 1, 10], fov: 50 }}>
-        <ambientLight intensity={0.5} />
-        <directionalLight position={[2, 5, 2]} intensity={1} />
-        <Suspense fallback={<div>Loading model...</div>}>
-          <Lake />
-        </Suspense>
-        <OrbitControls />
-      </Canvas>
-    </div>
+    <View style={styles.container}>
+      <Text style={styles.text}>Monitoring Content Goes Here</Text>
+      {/* You can add other components or content here */}
+    </View>
   );
 }
 
-const styles = {
+const styles = StyleSheet.create({
   container: {
-    width: '100vw',
-    height: '100vh',
-    overflow: 'hidden',
-    display: 'flex',
+    flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#f0f0f0',
+    backgroundColor: '#E0F7FA',
   },
-  canvas: {
-    width: '100%',
-    height: '100%',
+  text: {
+    fontSize: 18,
+    color: '#00509E',
+    fontWeight: 'bold',
   },
-};
+});
+

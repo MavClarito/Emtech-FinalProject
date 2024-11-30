@@ -24,23 +24,28 @@ function Login() {
 
   const handleLogin = () => {
     console.log('Logging in with', email, password);
-    navigation.navigate('Home');  // Go back sa Home page after login
+    navigation.navigate('Home'); // Go back to Home page after login
   };
 
   return (
+    <View style={{ flex: 1 }}>
+    {/* Header positioned at the top */}
+    <View style={styles.headerContainer}>
+      <Image source={logo} style={styles.logo} />
+      <Text style={styles.headerText}>ALGSAT</Text>
+    </View>
+
     <ImageBackground source={backgroundImage} style={styles.backgroundImage}>
       <ScrollView contentContainerStyle={styles.scrollContainer}>
-        <View style={styles.headerContainer}>
-          <Image source={logo} style={styles.logo} />
-          <Text style={styles.headerText}>ALGSAT</Text>
-        </View>
-
+        {/* Header removed */}
+        
         <View style={styles.authContainer}>
           <Text style={styles.appTitle}>ALGAL BLOOM ESTIMATION USING SATELLITE IN LAKE</Text>
           <View style={styles.authForm}>
             <View style={styles.iconContainer}>
               <Text style={styles.userIcon}>👤</Text>
             </View>
+
             <Text style={styles.heading}>LOGIN</Text>
             <TextInput
               placeholder="Email ID"
@@ -72,6 +77,7 @@ function Login() {
         </View>
       </ScrollView>
     </ImageBackground>
+    </View>
   );
 }
 

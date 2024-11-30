@@ -6,6 +6,7 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "newArchEnabled": true,
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -30,6 +31,7 @@
           "RNMapboxMapsVersion": "11.0.0"
         }
       ]
-    ]
+    ],
+    "entryPoint": "./App.js" 
   }
 }

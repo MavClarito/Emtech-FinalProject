@@ -13,7 +13,7 @@ export const styles = StyleSheet.create({
   },
   parameterContainer: {
     width: '90%',
-    backgroundColor: '#D0E9F2',
+    backgroundColor: '#E0F7FA',
     padding: 10,
     borderRadius: 8,
     marginTop: 20,
@@ -38,7 +38,7 @@ export const styles = StyleSheet.create({
   },
   coverageContainer: {
     marginTop: 20,
-    backgroundColor: '#D0E9F2',
+    backgroundColor: '#E0F7FA',
     padding: 10,
     borderRadius: 8,
   },

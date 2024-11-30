@@ -22,9 +22,14 @@ export const styles = StyleSheet.create({
     width: '100%',
     flexDirection: 'row',
     alignItems: 'center',
+    justifyContent: 'flex-start',
     backgroundColor: '#004481',
-    paddingVertical: 20,
+    paddingVertical: 10,
     paddingHorizontal: 20,
+    position: 'absolute', // Ensures it's on top
+    top: 0, // Aligns it to the top of the screen
+    zIndex: 10, // Makes it render above other components
+    elevation: 5, // Adds shadow on Android for a "floating" effect
   },
   logo: {
     width: 80,
@@ -33,9 +38,9 @@ export const styles = StyleSheet.create({
   },
   headerText: {
     fontSize: 24,
-    marginTop: 10, 
     fontWeight: 'bold',
     color: '#FFFFFF',
+    marginLeft: 10, // Add this instead of marginTop
   },
   appTitle: {
     fontSize: 24,
