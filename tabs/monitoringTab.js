@@ -62,9 +62,8 @@ export default function MonitoringTab({ navigation }) { // Assuming you are usin
   const handleParameterSelect = (param) => {
     if (selectedParam === param.name) {
       setImageSource(require('../assets/images/LagunaLake.jpg'));
-      setSelectedParam(null);  // Reset the selected parameter
+      setSelectedParam(null); 
     } else {
-      // Otherwise, set the new image and parameter
       setImageSource(param.image);
       setSelectedParam(param.name);
     }
