@@ -1,4 +1,4 @@
-//monitoringStyle.js
+// monitoringStyle.js
 import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
@@ -6,17 +6,36 @@ export const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#E0F7FA',
     alignItems: 'center',
+    padding: 10,
   },
-  map: {
+  imageContainer: {
+    width: '90%',
+    height: 500, 
+    backgroundColor: '#B2EBF2',
+    borderRadius: 12,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: 40, 
+    marginBottom: 20,
+  },
+  image: {
     width: '100%',
-    height: '50%',
+    height: '100%',
+    borderRadius: 12,
+  },
+  parameterList: {
+    width: '100%',
   },
   parameterContainer: {
     width: '90%',
-    backgroundColor: '#E0F7FA',
-    padding: 10,
+    backgroundColor: '#ffffff',
+    padding: 15,
     borderRadius: 8,
-    marginTop: 20,
+    marginVertical: 10,
+    elevation: 3, 
+    shadowColor: '#000', 
+    shadowOpacity: 0.1,
+    shadowRadius: 5,
   },
   parameterText: {
     fontSize: 16,
@@ -24,27 +43,31 @@ export const styles = StyleSheet.create({
     color: '#00509E',
     marginBottom: 10,
   },
-  checkboxContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginVertical: 5,
+  button: {
+    backgroundColor: '#00509E',
+    paddingVertical: 8,
+    paddingHorizontal: 15,
+    borderRadius: 5,
   },
-  checkbox: {
-    marginRight: 10,
+  buttonText: {
+    color: '#fff',
+    fontSize: 14,
+    fontWeight: 'bold',
   },
-  checkboxLabel: {
+  recommendationContainer: {
+    marginTop: 15,
+    paddingLeft: 10,
+  },
+  recommendationTitle: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: '#00509E',
+  },
+  recommendationList: {
+    marginTop: 10,
+  },
+  recommendationText: {
     fontSize: 14,
     color: '#333',
-  },
-  coverageContainer: {
-    marginTop: 20,
-    backgroundColor: '#E0F7FA',
-    padding: 10,
-    borderRadius: 8,
-  },
-  coverageText: {
-    fontSize: 20,
-    color: '#00509E',
-    fontWeight: 'bold',
   },
 });
