@@ -1,4 +1,3 @@
-// monitoringStyle.js
 import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
@@ -7,17 +6,81 @@ export const styles = StyleSheet.create({
     backgroundColor: '#E0F7FA',
     alignItems: 'center',
     padding: 10,
+    justifyContent: 'flex-start',  
   },
+
+  // Hamburger Menu Button
+  hamburgerButton: {
+    position: 'absolute',
+    top: 30,              // Adjust top as needed
+    left: 20,             // Adjust left as needed
+    backgroundColor: '#00509E',  // Background color for the button circle
+    width: 50,            // Width of the circle
+    height: 50,           // Height of the circle
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 25,     // Half of width and height to make it circular
+    zIndex: 100,         
+  },
+
+  hamburgerIcon: {
+    width: 30,
+    height: 3,
+    backgroundColor: '#fff', // Color of the bars (White in this case)
+    borderRadius: 3,
+    marginBottom: 6,
+  },
+
+  hamburgerIconMiddle: {
+    width: 30,
+    height: 3,
+    backgroundColor: '#fff', // Color of the middle bar
+    borderRadius: 3,
+    marginBottom: 6,
+  },
+
+  hamburgerIconBottom: {
+    width: 30,
+    height: 3,
+    backgroundColor: '#fff', // Color of the bottom bar
+    borderRadius: 3,
+  },
+
+  // Menu 
+  menuContainer: {
+    position: 'absolute',
+    top: 70,              // Adjust top to show below the hamburger
+    left: 20,
+    backgroundColor: '#fff',
+    width: 200,
+    borderRadius: 12,
+    padding: 10,
+    elevation: 10,        
+    zIndex: 99,           
+  },
+
+  menuItem: {
+    paddingVertical: 10,
+  },
+
+  menuItemText: {
+    fontSize: 16,
+    color: '#00509E',
+    textAlign: 'left',
+  },
+
+  // Image container
   imageContainer: {
     width: '90%',
-    height: 500, 
+    height: 500,
     backgroundColor: '#B2EBF2',
     borderRadius: 12,
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: 40, 
+    marginTop: 40,        
     marginBottom: 20,
   },
+
   image: {
     width: '100%',
     height: '100%',
