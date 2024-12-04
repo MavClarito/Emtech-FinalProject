@@ -72,7 +72,7 @@ export const styles = StyleSheet.create({
   // Image container
   imageContainer: {
     width: '90%',
-    height: 500,
+    height: '30%',
     backgroundColor: '#B2EBF2',
     borderRadius: 12,
     justifyContent: 'center',
@@ -85,6 +85,7 @@ export const styles = StyleSheet.create({
     width: '100%',
     height: '100%',
     borderRadius: 12,
+    resizeMode: 'contain',
   },
   parameterList: {
     width: '100%',
@@ -94,6 +95,7 @@ export const styles = StyleSheet.create({
     backgroundColor: '#ffffff',
     padding: 15,
     borderRadius: 8,
+    marginLeft: 20,
     marginVertical: 10,
     elevation: 3, 
     shadowColor: '#000', 
@@ -120,6 +122,7 @@ export const styles = StyleSheet.create({
   recommendationContainer: {
     marginTop: 15,
     paddingLeft: 10,
+    marginLeft: 10,
   },
   recommendationTitle: {
     fontSize: 18,
