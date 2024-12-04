@@ -60,9 +60,7 @@ export default function MonitoringTab({ navigation }) { // Assuming you are usin
 
   // Shows recos once button pressed
   const handleParameterSelect = (param) => {
-    // Check if the selected parameter is already active
     if (selectedParam === param.name) {
-      // If the same parameter is selected, reset the image to the original
       setImageSource(require('../assets/images/LagunaLake.jpg'));
       setSelectedParam(null);  // Reset the selected parameter
     } else {
