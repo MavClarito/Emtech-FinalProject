@@ -11,7 +11,7 @@ export default function MonitoringTab({ navigation }) { // Assuming you are usin
   const parameters = [
     {
       name: 'Algal Bloom',
-      image: require('../assets/images/algalBloom.jpg'),
+      image: require('../assets/images/algalBloom.png'),
       recommendations: [
         'Manage and control the artificial feeding in aquaculture to reduce the nutrient level that contributes to algal growth.',
         'Strict enforcement of pollution laws to control untreated waste entry.',
@@ -22,7 +22,7 @@ export default function MonitoringTab({ navigation }) { // Assuming you are usin
     },
     {
       name: 'Total Suspended Solids',
-      image: require('../assets/images/tss.jpg'),
+      image: require('../assets/images/tss.png'),
       recommendations: [
         'Minimize sedimentation by building barriers near tributary mouths.',
         'Launch reforestation to stabilize soil and reduce erosion.',
@@ -30,7 +30,7 @@ export default function MonitoringTab({ navigation }) { // Assuming you are usin
     },
     {
       name: 'Phosphate',
-      image: require('../assets/images/phosphate.jpg'),
+      image: require('../assets/images/phosphate.png'),
       recommendations: [
         'Control artificial feeding to reduce nutrient levels.',
         'Enforce pollution laws to reduce nitrate contamination.',
@@ -39,7 +39,7 @@ export default function MonitoringTab({ navigation }) { // Assuming you are usin
     },
     {
       name: 'Nitrate',
-      image: require('../assets/images/nitrate.jpg'),
+      image: require('../assets/images/nitrate.png'),
       recommendations: [
         'Control artificial feeding to reduce nutrient levels.',
         'Strict enforcement of pollution laws to reduce untreated waste.',
@@ -49,7 +49,7 @@ export default function MonitoringTab({ navigation }) { // Assuming you are usin
     },
     {
       name: 'Dissolved Oxygen',
-      image: require('../assets/images/dissolvedOxygen.jpg'),
+      image: require('../assets/images/dissolvedOxygen.png'),
       recommendations: [
         'Minimize sedimentation to avoid depleting oxygen levels.',
         'Promote public awareness to avoid practices causing eutrophication.',
@@ -64,14 +64,11 @@ export default function MonitoringTab({ navigation }) { // Assuming you are usin
     setSelectedParam(param.name); 
   };
 
-  // Toggle menu visibility
   const toggleMenu = () => {
     setIsMenuVisible(!isMenuVisible);
   };
 
-  // Handle logout and redirect to login screen
   const handleLogout = () => {
-    // Assuming 'Login' is your login screen name
     navigation.navigate('Login');
   };
 

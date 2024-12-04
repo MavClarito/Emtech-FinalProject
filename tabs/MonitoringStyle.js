@@ -12,21 +12,21 @@ export const styles = StyleSheet.create({
   // Hamburger Menu Button
   hamburgerButton: {
     position: 'absolute',
-    top: 30,              // Adjust top as needed
-    left: 20,             // Adjust left as needed
-    backgroundColor: '#00509E',  // Background color for the button circle
-    width: 50,            // Width of the circle
-    height: 50,           // Height of the circle
+    top: 30,             
+    left: 20,         
+    backgroundColor: '#00509E', 
+    width: 50,          
+    height: 50,         
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: 25,     // Half of width and height to make it circular
+    borderRadius: 25,    
     zIndex: 100,         
   },
 
   hamburgerIcon: {
     width: 30,
     height: 3,
-    backgroundColor: '#fff', // Color of the bars (White in this case)
+    backgroundColor: '#fff', 
     borderRadius: 3,
     marginBottom: 6,
   },
@@ -34,7 +34,7 @@ export const styles = StyleSheet.create({
   hamburgerIconMiddle: {
     width: 30,
     height: 3,
-    backgroundColor: '#fff', // Color of the middle bar
+    backgroundColor: '#fff', 
     borderRadius: 3,
     marginBottom: 6,
   },
@@ -42,14 +42,14 @@ export const styles = StyleSheet.create({
   hamburgerIconBottom: {
     width: 30,
     height: 3,
-    backgroundColor: '#fff', // Color of the bottom bar
+    backgroundColor: '#fff', 
     borderRadius: 3,
   },
 
   // Menu 
   menuContainer: {
     position: 'absolute',
-    top: 70,              // Adjust top to show below the hamburger
+    top: 70,              
     left: 20,
     backgroundColor: '#fff',
     width: 200,
