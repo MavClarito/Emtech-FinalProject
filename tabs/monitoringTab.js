@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import { View, Text, ScrollView, Image, TouchableOpacity, Modal, Button } from 'react-native';
-import { styles } from './MonitoringStyle'; 
+import { View, Text, ScrollView, Image, TouchableOpacity, Modal, Button, Alert } from 'react-native';
+import { styles } from './MonitoringStyle';
 
-export default function MonitoringTab({ navigation }) { // Assuming you are using react-navigation
+export default function MonitoringTab({ navigation }) {
   const [imageSource, setImageSource] = useState(null);
-  const [selectedParam, setSelectedParam] = useState(null); 
-  const [isMenuVisible, setIsMenuVisible] = useState(false); // State to control the visibility of the menu
+  const [selectedParam, setSelectedParam] = useState(null);
+  const [isMenuVisible, setIsMenuVisible] = useState(false);
 
-  // List ng WQP with recos
+  // List of params with recos
   const parameters = [
     {
       name: 'Algal Bloom',
@@ -58,17 +58,36 @@ export default function MonitoringTab({ navigation }) { // Assuming you are usin
     },
   ];
 
-  // Shows recos once button pressed
+  // oaram selction
   const handleParameterSelect = (param) => {
     if (selectedParam === param.name) {
       setImageSource(require('../assets/images/LagunaLake.jpg'));
-      setSelectedParam(null); 
+      setSelectedParam(null);
     } else {
       setImageSource(param.image);
       setSelectedParam(param.name);
+      showAlert(param.name);
     }
   };
-  
+
+  const showAlert = (paramName) => {
+    const emojis = {
+      'Algal Bloom': '🌱',
+      'Total Suspended Solids': '💧',
+      'Phosphate': '⚡',
+      'Nitrate': '💨',
+      'Dissolved Oxygen': '💨',
+    };
+
+    const emoji = emojis[paramName] || '⚠️'; 
+
+
+    Alert.alert(
+      'Attention Required!',
+      `The ${paramName} is very high! ${emoji} Please be advised that urgent actions are needed.`
+    );
+  };
+
   const toggleMenu = () => {
     setIsMenuVisible(!isMenuVisible);
   };
@@ -79,14 +98,13 @@ export default function MonitoringTab({ navigation }) { // Assuming you are usin
 
   return (
     <View style={styles.container}>
-      {/* Hamburger Menu Button */}
       <TouchableOpacity
         style={styles.hamburgerButton}
         onPress={toggleMenu}
       >
-          <View style={styles.hamburgerIcon}></View>
-          <View style={styles.hamburgerIconMiddle}></View>
-          <View style={styles.hamburgerIconBottom}></View>
+        <View style={styles.hamburgerIcon}></View>
+        <View style={styles.hamburgerIconMiddle}></View>
+        <View style={styles.hamburgerIconBottom}></View>
       </TouchableOpacity>
 
       {/* Menu */}
@@ -104,7 +122,7 @@ export default function MonitoringTab({ navigation }) { // Assuming you are usin
         </View>
       )}
 
-      {/* lagayan ng image */}
+      {/* Image Container */}
       <View style={styles.imageContainer}>
         <Image source={imageSource || require('../assets/images/LagunaLake.jpg')} style={styles.image} />
       </View>
