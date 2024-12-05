@@ -19,7 +19,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.solicizing.FinalProject"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -32,6 +33,11 @@
         }
       ]
     ],
-    "entryPoint": "./App.js" 
+    "entryPoint": "./App.js",
+    "extra": {
+      "eas": {
+        "projectId": "e571f67c-e8ef-4915-b714-d178877c5629"
+      }
+    }
   }
 }
