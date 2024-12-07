@@ -1,39 +1,31 @@
 {
   "expo": {
-    "name": "FinalProject",
+    "name": "ALGSAT",
     "slug": "FinalProject",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/app-logo.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
+    "newArchEnabled": false,
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.solicizing.FinalProject"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/app-logo.png",
         "backgroundColor": "#ffffff"
       },
       "package": "com.solicizing.FinalProject"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/logo.png"
     },
-    "plugins": [
-      [
-        "@rnmapbox/maps",
-        {
-          "RNMapboxMapsVersion": "11.0.0"
-        }
-      ]
-    ],
-    "entryPoint": "./App.js",
     "extra": {
       "eas": {
         "projectId": "e571f67c-e8ef-4915-b714-d178877c5629"
