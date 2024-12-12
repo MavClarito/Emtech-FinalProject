@@ -14,17 +14,17 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.solicizing.FinalProject"
+      "bundleIdentifier": "com.solicizing.ALGSAT"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/app-logo.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.solicizing.FinalProject"
+      "package": "com.solicizing.algsat"
     },
     "web": {
-      "favicon": "./assets/logo.png"
+      "favicon": "./assets/app-logo.png"
     },
     "extra": {
       "eas": {
