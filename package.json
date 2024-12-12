@@ -12,6 +12,7 @@
     "@aws-sdk/client-s3": "^3.691.0",
     "@aws-sdk/s3-request-presigner": "^3.691.0",
     "@expo/metro-runtime": "~4.0.0",
+    "@react-native-async-storage/async-storage": "^2.1.0",
     "@react-navigation/native": "^6.1.18",
     "@react-navigation/native-stack": "^6.11.0",
     "@react-navigation/stack": "^6.4.1",
