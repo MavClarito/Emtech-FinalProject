@@ -14,15 +14,9 @@ function AboutUs() {
   return (
     <ScrollView style={styles.container}>
       {/* Header Section */}
-      <View style={styles.headerBar}>
-        <Image source={require('../assets/images/logo.png')} style={styles.headerLogo} />
-        <Text style={styles.headerText}>~ALGSAT</Text>
-        {/* Navigation Buttons */}
-        <View style={styles.menu}>
-          <TouchableOpacity onPress={() => navigation.navigate('Home')}>
-            <Text style={styles.menuItem}>Home Page</Text>
-          </TouchableOpacity>
-        </View>
+      <View style={styles.headerContainer}>
+        <Image source={require('../assets/images/logo.png')} style={styles.logo} />
+        <Text style={styles.headerText}>ALGSAT</Text>
       </View>
 
       {/* Details Section */}
@@ -80,7 +74,6 @@ function AboutUs() {
           </View>
         </View>
       </View>
-
     </ScrollView>
   );
 }
@@ -88,10 +81,10 @@ function AboutUs() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#dee8f1',  // Background color equivalent to CSS
+    backgroundColor: '#dee8f1',  
     padding: 20,
   },
-  headerBar: {
+  headerContainer: {
     width: '100%',
     flexDirection: 'row',
     alignItems: 'center',
@@ -104,35 +97,26 @@ const styles = StyleSheet.create({
     zIndex: 10,
     elevation: 5,
   },
-  headerLogo: {
-    width: 40,
-    height: 40,
+  logo: {
+    width: 80,
+    height: 50,
     marginRight: 10,
   },
   headerText: {
-    fontSize: 20,
+    fontSize: 24,
     fontWeight: 'bold',
-    color: 'white',
-  },
-  menu: {
-    flexDirection: 'row',
-    marginLeft: 'auto', // Aligns menu items to the right
-  },
-  menuItem: {
-    color: 'white',
-    marginHorizontal: 10,
-    fontSize: 16,
+    color: '#FFFFFF',
   },
   detailsSection: {
     marginVertical: 10,
     paddingHorizontal: 20,
     textAlign: 'center',
-    maxWidth: 600,  // Restrict the width for a more compact layout
+    maxWidth: 600,  
   },
   detailsTitle: {
     fontSize: 30,
     fontWeight: 'bold',
-    textAlign: 'center', // Centers the text horizontally
+    textAlign: 'center', 
     marginBottom: 10,
   },
   

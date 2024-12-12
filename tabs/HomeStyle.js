@@ -3,22 +3,22 @@ import { StyleSheet } from 'react-native';
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#DEE8F1', // Set overall background color
+    backgroundColor: '#DEE8F1', 
   },
   
   backgroundImage: {
     width: '100%', 
-    height: 250, // Fixed height for background image
+    height: 250, 
     position: 'absolute',
-    bottom: 0, // Position image at the bottom
+    bottom: 0, 
     resizeMode: 'cover',
   },
   overlay: {
     position: 'absolute',
     bottom: 0,
     width: '100%',
-    height: 100,  // Height of the overlay to match bottom section
-    backgroundColor: '#E0F7FA', // Apply the background color overlay
+    height: 100,  
+    backgroundColor: '#E0F7FA', 
   },
   headerContainer: {
     width: '100%',
@@ -35,12 +35,12 @@ export const styles = StyleSheet.create({
   },
   scrollContainer: {
     paddingTop: 170, 
-    paddingHorizontal: 20,
+    paddingHorizontal: 15,
   },
   mapContainer: {
     alignItems: 'center',
-    padding: 20,
-    backgroundColor: 'rgba(208, 233, 242, 0.9)', // Ensure map container is readable
+    padding: 10,
+    backgroundColor: 'rgba(208, 233, 242, 0.9)', 
     borderRadius: 8,
     marginBottom: 20,
     shadowColor: '#000',
@@ -68,7 +68,7 @@ export const styles = StyleSheet.create({
   },
   contactContainer: {
     alignItems: 'center',
-    marginVertical: 20,
+    marginVertical: 0,
   },
   contactText: {
     fontSize: 16,
